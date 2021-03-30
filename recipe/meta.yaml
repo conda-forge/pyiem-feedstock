@@ -1,5 +1,5 @@
 {% set name = "pyIEM" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9ffaeb9d57c1be9657d340da997df03cc8e6dd70e140bdaec1a17788d588cbd5
+  sha256: 65dfca67ed9a973a7b3d516efce408c90e103317fb61da63d8df6e62aa7d969c
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -35,6 +35,7 @@ requirements:
     - numpy
     - pandas
     - pillow
+    - pyarrow
     - pydantic
     - pyproj
     - psycopg2
@@ -53,7 +54,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'A general library supporting NWS Products and the IEM Project.'
+  summary: A general library supporting NWS Products and the IEM Project.
   description: |
     pyIEM contains a wide collection of codes relevant for working with
     US National Weather Service data and code that supports the Iowa
