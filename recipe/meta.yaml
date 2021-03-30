@@ -35,6 +35,7 @@ requirements:
     - numpy
     - pandas
     - pillow
+    - pyarrow
     - pydantic
     - pyproj
     - psycopg2
