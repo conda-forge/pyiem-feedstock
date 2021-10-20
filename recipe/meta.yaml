@@ -1,5 +1,5 @@
 {% set name = "pyIEM" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ea050803591b52ae600fe85fdf37bd5d9b041f2b5ce332508926f3009cb881fb
+  sha256: e4e29a8155d3e6279b894f4bbf43dcd681fd2be240e691a55d4f9dd39a21efee
 
 build:
   noarch: python
@@ -28,8 +28,10 @@ requirements:
     - cartopy >=0.18
     - descartes
     - geopandas
+    - google-api-python-client
     - jinja2
     - matplotlib-base
+    - metar
     - metpy
     - netCDF4
     - numpy
@@ -40,6 +42,7 @@ requirements:
     - pyproj
     - psycopg2
     - rasterio
+    - rasterstats
     - requests
     - scipy
     - shapely
