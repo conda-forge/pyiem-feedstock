@@ -1,5 +1,5 @@
 {% set name = "pyIEM" %}
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 02d2247f5e4cb676466fe470d245002557018da9fd9416a631019a0cb6f36c23
+  sha256: b5b8a40b925268ba0d459088099081b91baabc505ce5093f03cca6d870bce1b5
 
 build:
   noarch: python
@@ -44,6 +44,7 @@ requirements:
     - requests
     - scipy
     - shapely
+    - sqlalchemy
     - xarray
 
 test:
