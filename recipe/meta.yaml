@@ -1,5 +1,5 @@
 {% set name = "pyIEM" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b5b8a40b925268ba0d459088099081b91baabc505ce5093f03cca6d870bce1b5
+  sha256: baf2dcbfc0982c5abf78b6fc4935d4132d621c038536be2c03cffb0aa06ad74b
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
