@@ -24,6 +24,7 @@ requirements:
   run:
     - python >=3.8
     - affine
+    - defusedxml
     - geopandas
     - google-api-python-client
     - jinja2
@@ -36,6 +37,7 @@ requirements:
     - pillow
     - pyarrow
     - pydantic
+    - pymemcache
     - pyproj
     - psycopg2
     - rasterio
@@ -43,7 +45,8 @@ requirements:
     - requests
     - scipy
     - shapely
-    - sqlalchemy
+    - sqlalchemy <2
+    - twython
     # Sneeky way to get backports.zoneinfo
     - tzlocal
     - xarray
