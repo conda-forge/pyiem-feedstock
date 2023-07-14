@@ -1,5 +1,5 @@
 {% set name = "pyIEM" %}
-{% set version = "1.15.0" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b27c7ddc6692309c6a4ae186884140e162386bb9ee05dad311a3ef790497d66c
+  sha256: 18578447505e3bb37aae12e8bcc0555e98b8edaa8a63ab026f233c2127d3dfe6
 
 build:
   noarch: python
@@ -26,7 +26,6 @@ requirements:
     - affine
     - defusedxml
     - geopandas
-    - google-api-python-client
     - jinja2
     - matplotlib-base
     - metar
@@ -45,10 +44,8 @@ requirements:
     - requests
     - scipy
     - shapely
-    - sqlalchemy <2
+    - sqlalchemy
     - twython
-    # Sneeky way to get backports.zoneinfo
-    - tzlocal
     - xarray
 
 test:
