@@ -26,7 +26,6 @@ requirements:
     - affine
     - defusedxml
     - geopandas
-    - google-api-python-client
     - jinja2
     - matplotlib-base
     - metar
@@ -45,10 +44,8 @@ requirements:
     - requests
     - scipy
     - shapely
-    - sqlalchemy <2
+    - sqlalchemy
     - twython
-    # Sneeky way to get backports.zoneinfo
-    - tzlocal
     - xarray
 
 test:
