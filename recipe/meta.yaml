@@ -1,5 +1,5 @@
 {% set name = "pyIEM" %}
-{% set version = "1.16.0" %}
+{% set version = "1.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 18578447505e3bb37aae12e8bcc0555e98b8edaa8a63ab026f233c2127d3dfe6
+  sha256: 2aaab8d66119a0343ba55b90a28e24b2ac197220647af05fb963480bff731546
 
 build:
   noarch: python
@@ -38,7 +38,7 @@ requirements:
     - pydantic
     - pymemcache
     - pyproj
-    - psycopg2
+    - psycopg
     - rasterio
     - rasterstats
     - requests
