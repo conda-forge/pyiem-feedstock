@@ -1,5 +1,5 @@
 {% set name = "pyIEM" %}
-{% set version = "1.17.0" %}
+{% set version = "1.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2aaab8d66119a0343ba55b90a28e24b2ac197220647af05fb963480bff731546
+  sha256: 7b9026d03586ae09ff75415b439c15136aa9335e4f5b669c4fbe587cce7eef5e
 
 build:
   noarch: python
@@ -31,8 +31,10 @@ requirements:
     - metar
     - metpy
     - netCDF4
+    - nh3
     - numpy
     - pandas
+    - paste
     - pillow
     - pyarrow
     - pydantic
