@@ -27,6 +27,7 @@ requirements:
     - defusedxml
     - docutils
     - geopandas
+    - httpx
     - jinja2
     - matplotlib-base
     - metar
@@ -46,7 +47,6 @@ requirements:
     - psycopg
     - rasterio
     - rasterstats
-    - requests
     - scipy
     - shapely
     - sqlalchemy
