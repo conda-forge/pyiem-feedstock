@@ -1,5 +1,5 @@
 {% set name = "pyiem" %}
-{% set version = "1.21.0" %}
+{% set version = "1.22.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2f8f563ba6e5a96a0ff94aa7455e399ff315ea2cbd74a143cf6179def7d7821f
+  sha256: cca029fda6ca8007666bf16b0d8c85067a586d11cf610da081118fb6e8c8cb73
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - defusedxml
     - docutils
     - geopandas
+    - httpx
     - jinja2
     - matplotlib-base
     - metar
@@ -46,7 +47,6 @@ requirements:
     - psycopg
     - rasterio
     - rasterstats
-    - requests
     - scipy
     - shapely
     - sqlalchemy
