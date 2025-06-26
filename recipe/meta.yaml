@@ -1,5 +1,5 @@
 {% set name = "pyiem" %}
-{% set version = "1.23.0" %}
+{% set version = "1.24.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e31eed22c7a72a179e319d81bede59e6231ca58f1ffcde573a01deb099f75d57
+  sha256: 3a9ee6e67a022f19219c83da9a1a368c38fe1a70686be78150deb37899e2dfaf
 
 build:
   noarch: python
@@ -61,8 +61,8 @@ test:
 
 about:
   home: https://github.com/akrherz/pyIEM
-  license: Apache-2.0
-  license_family: Apache
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: A general library supporting NWS Products and the IEM Project.
   description: |

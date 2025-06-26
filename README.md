@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyiem-feedstock
 
 Home: https://github.com/akrherz/pyIEM
 
-Package license: Apache-2.0
+Package license: MIT
 
 Summary: A general library supporting NWS Products and the IEM Project.
 
