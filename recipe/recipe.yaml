@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: pyiem
-  version: "1.27.0"
-  python_min: "3.11"
+  version: "1.28.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 950dc9a2cadc1fa99113531ed97cbaba861d2a2c7f4d8a73d45980282fbfbf69
+  sha256: 4a795858daf7dc823030cb45df87aa458af80749a2fbac0941172d7f7fb140fc
 
 build:
   number: 0
@@ -30,7 +29,6 @@ requirements:
     - defusedxml
     - docutils
     - geopandas
-    - httpx
     - jinja2
     - matplotlib-base
     - metar
@@ -49,6 +47,7 @@ requirements:
     - psycopg
     - rasterio
     - rasterstats
+    - requests
     - scipy
     - shapely
     - sqlalchemy
@@ -60,7 +59,9 @@ tests:
       imports:
         - pyiem
       pip_check: false
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   license: MIT
