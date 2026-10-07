@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyiem
-  version: "1.28.0"
+  version: "1.28.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 4a795858daf7dc823030cb45df87aa458af80749a2fbac0941172d7f7fb140fc
+  sha256: 4f3407a37355e4a08a8896e52cf50dc8b2bd3e4358bf98b68db6513714fc51e1
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - affine
     - defusedxml
     - docutils
-    - geopandas
+    - geopandas >=1.2
     - jinja2
     - matplotlib-base
     - metar
